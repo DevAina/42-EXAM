@@ -1,0 +1,44 @@
+Nom de l'exercice : is_power_of_2
+Fichiers attendus : is_power_of_2.c
+Fonctions autorisées : Aucune
+Objectif :
+Créez une fonction qui détermine si un nombre donné est une puissance de 2.
+Spécifications de la fonction :
+
+Prototype : int is_power_of_2(unsigned int n);
+Paramètre :
+
+n : le nombre non signé à tester
+
+
+Valeur de retour :
+
+1 si le nombre est une puissance de 2
+0 dans le cas contraire
+
+
+
+Détails de l'implémentation :
+
+La fonction doit vérifier si le nombre donné peut être exprimé sous la forme 2^x, où x est un entier non négatif.
+Les puissances de 2 sont : 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, etc.
+La fonction doit fonctionner pour tout nombre non signé, y compris 0 et les grands nombres.
+
+Considérations importantes :
+
+Rappelez-vous que 0 n'est pas considéré comme une puissance de 2.
+Le nombre 1 est considéré comme 2^0, donc c'est une puissance de 2.
+Aucune fonction externe n'est autorisée, vous devez donc implémenter la logique vous-même.
+
+Astuces pour l'implémentation :
+
+Pensez à la représentation binaire des puissances de 2.
+Une propriété intéressante des puissances de 2 en binaire est qu'elles n'ont qu'un seul bit à 1.
+
+Exemples (non fournis dans l'énoncé original, mais utiles pour comprendre) :
+
+is_power_of_2(4) devrait retourner 1
+is_power_of_2(8) devrait retourner 1
+is_power_of_2(10) devrait retourner 0
+is_power_of_2(0) devrait retourner 0
+is_power_of_2(1) devrait retourner 1

@@ -1,0 +1,23 @@
+Nom de l'exercice : fprime
+Fichiers attendus : fprime.c
+Fonctions autorisées : printf, atoi
+Objectif :
+Créez un programme qui prend en entrée un nombre entier positif et affiche ses facteurs premiers sur la sortie standard, suivis d'un retour à la ligne.
+Spécifications :
+
+Les facteurs premiers doivent être affichés par ordre croissant.
+Les facteurs doivent être séparés par le symbole '*'.
+L'expression résultante affichée doit donner le bon résultat lorsqu'elle est évaluée.
+Si le nombre de paramètres n'est pas exactement 1, le programme doit simplement afficher un retour à la ligne.
+L'entrée, lorsqu'elle est fournie, sera toujours valide (un entier positif).
+
+Exemples de fonctionnement :
+
+Pour l'entrée 225225, la sortie sera : 3*3*5*5*7*11*13
+Pour l'entrée 8333325, la sortie sera : 3*3*5*5*7*11*13*37
+Pour l'entrée 9539, la sortie sera : 9539 (car c'est un nombre premier)
+Pour l'entrée 804577, la sortie sera : 804577 (car c'est un nombre premier)
+Pour l'entrée 42, la sortie sera : 2*3*7
+Pour l'entrée 1, la sortie sera : 1
+Sans paramètre, le programme affichera simplement un retour à la ligne
+Avec plus d'un paramètre, le programme affichera simplement un retour à la ligne

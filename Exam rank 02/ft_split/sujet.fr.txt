@@ -1,0 +1,39 @@
+Nom de l'exercice : ft_split
+Fichiers attendus : ft_split.c
+Fonctions autorisées : malloc
+Objectif :
+Créez une fonction qui prend une chaîne de caractères, la découpe en mots, et retourne ces mots sous forme d'un tableau de chaînes de caractères terminé par NULL.
+Spécifications de la fonction :
+
+Prototype : char **ft_split(char *str);
+Paramètre :
+
+str : la chaîne de caractères à découper
+
+
+Valeur de retour : un tableau de chaînes de caractères (char**) contenant les mots extraits, terminé par NULL
+
+Définition d'un "mot" :
+Un "mot" est défini comme une partie de la chaîne délimitée soit par :
+
+des espaces, des tabulations ou des retours à la ligne
+le début ou la fin de la chaîne
+
+Détails de l'implémentation :
+
+La fonction doit analyser la chaîne d'entrée et identifier les mots selon la définition ci-dessus.
+Chaque mot identifié doit être copié dans une nouvelle chaîne de caractères.
+Les mots extraits doivent être stockés dans un tableau de pointeurs vers des chaînes de caractères.
+Le dernier élément du tableau doit être un pointeur NULL pour marquer la fin du tableau.
+
+Exemple d'utilisation (non fourni dans l'énoncé original) :
+char *str = "Hello world! How are you?";
+char **result = ft_split(str);
+
+// result devrait contenir :
+// result[0] = "Hello"
+// result[1] = "world!"
+// result[2] = "How"
+// result[3] = "are"
+// result[4] = "you?"
+// result[5] = NULL

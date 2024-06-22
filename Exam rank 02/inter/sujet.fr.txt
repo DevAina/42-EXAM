@@ -1,0 +1,32 @@
+Nom de l'exercice : inter
+Fichiers attendus : inter.c
+Fonctions autorisées : write
+Objectif :
+Créez un programme qui prend deux chaînes de caractères en argument et affiche, sans doublons, les caractères qui apparaissent dans les deux chaînes, dans l'ordre où ils apparaissent dans la première chaîne.
+Spécifications du programme :
+
+Le programme doit prendre exactement deux arguments (les deux chaînes à comparer).
+L'affichage doit être suivi d'un retour à la ligne (\n).
+Si le nombre d'arguments n'est pas 2, le programme doit simplement afficher un retour à la ligne.
+
+Règles de traitement :
+
+Parcourir la première chaîne caractère par caractère.
+Pour chaque caractère de la première chaîne, vérifier s'il apparaît dans la deuxième chaîne.
+Si le caractère est présent dans la deuxième chaîne et n'a pas encore été affiché, l'afficher.
+Continuer jusqu'à la fin de la première chaîne.
+
+Gestion des doublons :
+
+Un caractère ne doit être affiché qu'une seule fois, même s'il apparaît plusieurs fois dans chaque chaîne.
+
+Exemples de fonctionnement :
+
+./inter "padinton" "paqefwtdjetyiytjneytjoeyjnejeyj"
+Sortie : padinto
+./inter ddf6vewg64f gtwthgdwthdwfteewhrtag6h4ffdhsd
+Sortie : df6ewg4
+./inter "rien" "cette phrase ne cache rien"
+Sortie : rien
+./inter
+Sortie : (seulement un retour à la ligne)

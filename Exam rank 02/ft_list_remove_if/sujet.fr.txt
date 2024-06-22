@@ -1,0 +1,22 @@
+implémenter la fonction ft_list_remove_if, qui supprime tous les éléments d’une liste chaînée dont la valeur correspond à data_ref. La fonction prend en entrée un pointeur vers le début de la liste (begin_list), un pointeur générique vers la valeur de référence (data_ref), et un pointeur vers une fonction de comparaison (cmp) qui renvoie 0 si les deux éléments sont égaux.
+
+Voici le prototype de la fonction :
+
+void    ft_list_remove_if(t_list **begin_list, void *data_ref, int (*cmp)());
+
+    - t_list est la structure de base pour les éléments de la liste chaînée. Assurez-vous que votre fichier d’en-tête “ft_list.h” contient la définition de cette structure.
+    - La fonction doit parcourir la liste et supprimer tous les éléments dont la valeur correspond à data_ref.
+    - Si un élément est supprimé, assurez-vous de libérer la mémoire associée à cet élément.
+
+Exemple d’utilisation :
+
+Supposons que nous ayons la liste suivante :
+
+1 -> 2 -> 3 -> 2 -> 4 -> 5 -> NULL
+
+Si nous appelons ft_list_remove_if(&begin_list, (void *)2, cmp_function), la liste devrait être modifiée comme suit :
+
+1 -> 3 -> 4 -> 5 -> NULL
+
+Assurez-vous de tester votre fonction avec différents cas de test pour vous assurer qu’elle fonctionne correctement.
+

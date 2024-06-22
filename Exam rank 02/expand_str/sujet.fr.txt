@@ -1,0 +1,33 @@
+epur_str
+Objectif:
+    Écrivez un programme en langage C qui prend une chaîne de caractères en argument et l’affiche avec exactement un espace entre les mots, sans espaces ni tabulations au début ou à la fin, suivi d’un saut de ligne (\n).
+
+Exigence :
+
+    Utilisez uniquement la fonction write.
+
+Spécifications :
+
+    Le programme doit s’appeler epur_str.
+    Il doit prendre un seul argument en ligne de commande : une chaîne de caractères.
+    Si le nombre d’arguments n’est pas égal à 1, ou s’il n’y a pas de mots à afficher, le programme doit afficher \n.
+    Un “mot” est défini comme une partie de la chaîne de caractères délimitée soit par des espaces/tabulations, soit par le début/fin de la chaîne.
+    Le programme doit afficher la chaîne de caractères modifiée.
+
+Exemples :
+
+    Exécution avec l’argument "See? It's easy to print the same thing" :
+
+    $> ./epur_str "See? It's easy to print the same thing" | cat -e
+    See? It's easy to print the same thing$
+
+    Exécution avec l’argument " this        time it      will     be    more complex  . " :
+
+    $> ./epur_str " this        time it      will     be    more complex  . " | cat -e
+    this time it will be more complex .$
+
+    Exécution sans argument :
+
+    $> ./epur_str "" | cat -e
+    $
+

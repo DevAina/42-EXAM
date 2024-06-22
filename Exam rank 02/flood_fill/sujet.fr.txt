@@ -1,0 +1,31 @@
+ flood_fill
+
+Objectif : Écrire une fonction qui prend un tableau de caractères (représenté par un tableau à deux dimensions de caractères), les dimensions de ce tableau et un point de départ, et remplit toute une zone en remplaçant les caractères à l’intérieur par le caractère ‘F’. Une zone est un groupe de caractères identiques délimités horizontalement et verticalement par d’autres caractères ou par la limite du tableau. La fonction ne remplit pas en diagonale.
+
+La fonction flood_fill sera prototypée comme suit :
+
+void flood_fill(char **tab, t_point size, t_point begin);
+
+La structure t_point est définie comme suit (à placer dans le fichier flood_fill.c) :
+
+typedef struct s_point
+{
+    int x;
+    int y;
+} t_point;
+
+Exemple :
+
+#include <stdlib.h>
+
+// Vérifie si le pixel (x, y) est valide et a la même couleur que la cible
+int isSafe(char **tab, int x, int y, char target)
+{
+    // ...
+}
+
+// Remplissage inondé à l'aide de BFS
+void flood_fill(char **tab, t_point size, t_point begin)
+{
+    // ...
+}

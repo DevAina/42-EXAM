@@ -1,0 +1,24 @@
+Nom de l'exercice : repeat_alpha
+Fichiers attendus : repeat_alpha.c
+Fonctions autorisées : write
+Objectif :
+Créez un programme nommé repeat_alpha qui prend une chaîne de caractères et l'affiche en répétant chaque caractère alphabétique autant de fois que son index dans l'alphabet, suivi d'un retour à la ligne.
+Spécifications du programme :
+
+Le programme doit prendre exactement un argument (la chaîne à traiter).
+Chaque caractère alphabétique doit être répété selon son index dans l'alphabet :
+
+'a' devient 'a' (1 fois)
+'b' devient 'bb' (2 fois)
+'c' devient 'ccc' (3 fois)
+...
+'z' devient 'zzzzzzzzzzzzzzzzzzzzzzzzzz' (26 fois)
+
+
+La casse des caractères doit rester inchangée.
+Les caractères non alphabétiques doivent être affichés tels quels, sans répétition.
+L'affichage doit être suivi d'un retour à la ligne.
+
+Règles de traitement :
+
+Parcourir la chaîne caractère par caractère.

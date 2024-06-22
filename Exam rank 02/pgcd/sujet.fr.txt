@@ -1,0 +1,42 @@
+Nom de l'exercice : pgcd (Plus Grand Commun Diviseur)
+Fichiers attendus : pgcd.c
+Fonctions autorisées : printf, atoi, malloc, free
+Objectif :
+Créez un programme qui prend deux chaînes de caractères représentant deux entiers strictement positifs pouvant tenir dans un int, et affiche leur plus grand commun diviseur (PGCD) suivi d'un retour à la ligne.
+Spécifications du programme :
+
+Le programme doit prendre exactement deux arguments.
+Ces arguments sont des chaînes représentant des entiers strictement positifs.
+Le programme doit calculer et afficher le PGCD de ces deux nombres.
+Le résultat affiché doit toujours être un entier strictement positif.
+L'affichage doit être suivi d'un retour à la ligne.
+
+Règles de traitement :
+
+Convertir les chaînes d'entrée en entiers (vous pouvez utiliser atoi).
+Calculer le PGCD des deux nombres.
+Afficher le résultat.
+
+Gestion des cas particuliers :
+
+Si le nombre de paramètres n'est pas 2, affichez simplement un retour à la ligne.
+
+Exemples de fonctionnement :
+
+./pgcd 42 10
+Sortie : 2
+./pgcd 42 12
+Sortie : 6
+./pgcd 14 77
+Sortie : 7
+./pgcd 17 3
+Sortie : 1
+./pgcd
+Sortie : (seulement un retour à la ligne)
+
+Considérations d'implémentation :
+
+Utilisez atoi pour convertir les chaînes en entiers.
+Implémentez un algorithme pour calculer le PGCD (par exemple, l'algorithme d'Euclide).
+Utilisez printf pour afficher le résultat.
+Assurez-vous de gérer correctement les cas limites, comme des nombres premiers entre eux.

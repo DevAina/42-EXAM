@@ -1,0 +1,20 @@
+add_prime_sum
+Objectif
+
+Écrire un programme en langage C qui prend un entier positif en argument et affiche la somme de tous les nombres premiers inférieurs ou égaux à ce paramètre, suivie d’un saut de ligne (\n). Utilise uniquement les fonctions suivantes:
+-write de la bibliothèque unistd.h.
+-exit.
+Spécifications
+
+    Le programme doit s’appeler add_prime_sum.
+    Il doit prendre un seul argument en ligne de commande : un entier positif.
+    Si le nombre d’arguments n’est pas égal à 1, ou si l’argument n’est pas positif, le programme doit afficher 0 suivi d’un saut de ligne (\n).
+    Sinon, il doit calculer la somme de tous les nombres premiers inférieurs ou égaux à l’argument et l’afficher.
+
+Exemples
+
+    Exécution avec l’argument 5 :
+
+    $> ./add_prime_sum 5
+    10
+

@@ -1,0 +1,40 @@
+Nom de l'exercice : ft_atoi_base
+Fichiers attendus : ft_atoi_base.c
+Fonctions autorisées : Aucune
+Objectif :
+Créez une fonction qui convertit une chaîne de caractères (représentant un nombre dans une base N ≤ 16) en un entier en base 10 et le retourne.
+Spécifications de la fonction :
+
+Prototype : int ft_atoi_base(const char *str, int str_base);
+Paramètres :
+
+str : la chaîne de caractères à convertir
+str_base : la base dans laquelle str est exprimée (2 ≤ str_base ≤ 16)
+
+
+Valeur de retour : l'entier en base 10 correspondant à la valeur de str
+
+Règles de conversion :
+
+Les caractères reconnus en entrée sont : 0123456789abcdef
+Les caractères utilisés dépendent de la base demandée. Par exemple :
+
+Pour la base 4, seuls "0123" sont reconnus
+Pour la base 16, "0123456789abcdef" sont tous reconnus
+
+
+Les lettres majuscules doivent également être reconnues (ex: "12fdb3" est équivalent à "12FDB3")
+Le signe moins ('-') n'est interprété que s'il est le premier caractère de la chaîne
+
+Contraintes :
+
+Aucune fonction externe n'est autorisée
+La gestion des erreurs n'est pas spécifiée dans l'énoncé, mais il serait judicieux de prévoir un comportement approprié pour les entrées invalides
+
+Exemples (non fournis dans l'énoncé original, mais utiles pour comprendre) :
+
+ft_atoi_base("123", 10) devrait retourner 123
+ft_atoi_base("1010", 2) devrait retourner 10
+ft_atoi_base("FF", 16) devrait retourner 255
+ft_atoi_base("-42", 10) devrait retourner -42
+ft_atoi_base("2a", 16) devrait retourner 42.

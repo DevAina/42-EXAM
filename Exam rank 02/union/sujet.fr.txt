@@ -1,0 +1,34 @@
+Nom de l'exercice : union
+Fichiers attendus : union.c
+Fonctions autorisées : write
+Objectif :
+Créez un programme qui prend deux chaînes de caractères et affiche, sans doublons, les caractères qui apparaissent dans l'une ou l'autre des chaînes.
+Spécifications du programme :
+
+Le programme doit prendre exactement deux arguments (les deux chaînes à traiter).
+Il doit afficher les caractères uniques qui apparaissent dans l'une ou l'autre des chaînes.
+L'ordre d'affichage doit suivre l'ordre d'apparition des caractères dans la ligne de commande.
+L'affichage doit être suivi d'un retour à la ligne ('\n').
+
+Règles de traitement :
+
+Parcourir la première chaîne et afficher chaque caractère unique.
+Parcourir la deuxième chaîne et afficher chaque caractère qui n'a pas déjà été affiché.
+Éviter les doublons : un caractère ne doit être affiché qu'une seule fois, même s'il apparaît plusieurs fois dans les chaînes.
+
+Gestion des cas particuliers :
+
+Si le nombre d'arguments n'est pas 2, le programme doit simplement afficher un retour à la ligne.
+
+Exemples de fonctionnement :
+
+./union zpadinton "paqefwtdjetyiytjneytjoeyjnejeyj"
+Sortie : zpadintoqefwjy
+./union ddf6vewg64f gtwthgdwthdwfteewhrtag6h4ffdhsd
+Sortie : df6vewg4thras
+./union "rien" "cette phrase ne cache rien"
+Sortie : rienct phas
+./union
+Sortie : (seulement un retour à la ligne)
+./union "rien"
+Sortie : (seulement un retour à la ligne)

@@ -1,0 +1,11 @@
+Implémente la fonction reverse_bits, qui prend un octet (8 bits) en entrée et renvoie un nouvel octet dont les bits sont inversés (le bit le plus significatif devient le moins significatif, et vice versa).
+
+Voici le prototype de la fonction :
+
+unsigned char   reverse_bits(unsigned char octet);
+
+L’octet d’entrée est représenté par la variable octet.
+
+Exemple d’utilisation :
+
+Si nous appelons reverse_bits(0b11001010), le résultat devrait être 0b01010011.

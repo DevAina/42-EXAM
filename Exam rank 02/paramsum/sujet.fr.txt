@@ -1,0 +1,33 @@
+Nom de l'exercice : paramsum
+Fichiers attendus : paramsum.c
+Fonctions autorisées : write
+Objectif :
+Créez un programme qui affiche le nombre d'arguments qui lui sont passés, suivi d'un retour à la ligne.
+Spécifications du programme :
+
+Le programme doit compter le nombre d'arguments passés en ligne de commande.
+Il doit afficher ce nombre, suivi d'un retour à la ligne.
+Si aucun argument n'est passé, le programme doit afficher 0 suivi d'un retour à la ligne.
+
+Règles de traitement :
+
+Le programme ne doit pas compter le nom du programme lui-même (argv[0]) comme un argument.
+Tous les autres arguments doivent être comptés, quel que soit leur contenu.
+
+Gestion des cas particuliers :
+
+Si le programme est exécuté sans aucun argument supplémentaire, il doit afficher 0.
+
+Exemples de fonctionnement :
+
+./paramsum 1 2 3 5 7 24
+Sortie : 6
+./paramsum 6 12 24
+Sortie : 3
+./paramsum
+Sortie : 0
+
+Considérations d'implémentation :
+
+Utilisez la fonction write pour l'affichage.
+Vous devrez convertir le nombre d'arguments (un entier) en une chaîne de caractères pour l'affichage.

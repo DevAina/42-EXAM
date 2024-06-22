@@ -1,0 +1,34 @@
+Nom de l'exercice : ulstr (Upper Lower String)
+Fichiers attendus : ulstr.c
+Fonctions autorisées : write
+Objectif :
+Créez un programme qui prend une chaîne de caractères et inverse la casse de toutes ses lettres. Les autres caractères restent inchangés.
+Spécifications du programme :
+
+Le programme doit prendre exactement un argument (la chaîne à traiter).
+Il doit inverser la casse de chaque lettre de la chaîne :
+
+Les lettres majuscules deviennent minuscules.
+Les lettres minuscules deviennent majuscules.
+
+
+Tous les autres caractères (chiffres, ponctuation, espaces, etc.) doivent rester inchangés.
+Le résultat doit être affiché suivi d'un retour à la ligne ('\n').
+
+Règles de traitement :
+
+Parcourir la chaîne caractère par caractère.
+Pour chaque caractère alphabétique, inverser sa casse.
+Laisser les caractères non alphabétiques tels quels.
+Afficher la chaîne modifiée.
+
+Exemples de fonctionnement :
+
+./ulstr "L'eSPrit nE peUt plUs pRogResSer s'Il staGne et sI peRsIsTent VAnIte et auto-justification."
+Sortie : l'EspRIT Ne PEuT PLuS PrOGrESsER S'iL STAgNE ET Si PErSiStENT vaNiTE ET AUTO-JUSTIFICATION.
+./ulstr "S'enTOuRer dE sECreT eSt uN sIGnE De mAnQuE De coNNaiSSanCe.  "
+Sortie : s'ENtoUrER De SecREt EsT Un SigNe dE MaNqUe dE COnnAIssANcE.
+./ulstr "3:21 Ba  tOut  moUn ki Ka di KE m'en Ka fe fot"
+Sortie : 3:21 bA  ToUT  MOuN KI kA DI ke M'EN kA FE FOT
+./ulstr
+Sortie : (seulement un retour à la ligne)

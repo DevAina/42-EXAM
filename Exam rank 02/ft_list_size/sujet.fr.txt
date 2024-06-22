@@ -1,0 +1,41 @@
+Nom de l'exercice : ft_list_size
+Fichiers attendus : ft_list_size.c, ft_list.h
+Fonctions autorisées : Aucune spécifiée
+Objectif :
+Créez une fonction qui retourne le nombre d'éléments dans une liste chaînée qui lui est passée en paramètre.
+
+Spécifications de la fonction :
+
+Prototype : int ft_list_size(t_list *begin_list);
+Paramètre :
+
+begin_list : pointeur vers le premier élément de la liste chaînée
+
+
+Valeur de retour : le nombre d'éléments dans la liste
+
+Structure de la liste chaînée :
+La structure suivante doit être utilisée et incluse dans un fichier nommé ft_list.h :
+typedef struct    s_list
+{
+    struct s_list *next;
+    void          *data;
+}                 t_list;
+
+Détails de l'implémentation :
+
+La fonction doit parcourir la liste chaînée à partir du pointeur begin_list.
+Elle doit compter le nombre total d'éléments dans la liste.
+La liste peut être de n'importe quelle longueur, y compris vide (dans ce cas, la fonction retournera 0).
+La fonction ne doit pas modifier la liste, seulement la parcourir pour compter les éléments.
+
+Exemple d'utilisation (non fourni dans l'énoncé original) :
+t_list *elem1 = malloc(sizeof(t_list));
+t_list *elem2 = malloc(sizeof(t_list));
+t_list *elem3 = malloc(sizeof(t_list));
+
+elem1->next = elem2;
+elem2->next = elem3;
+elem3->next = NULL;
+
+int size = ft_list_size(elem1);  // Devrait retourner 3
